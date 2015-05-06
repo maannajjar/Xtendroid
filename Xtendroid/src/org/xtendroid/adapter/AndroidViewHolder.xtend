@@ -48,6 +48,7 @@ class AndroidViewHolderProcessor extends AbstractClassProcessor {
 			addParameter("view", View.newTypeReference)
 			body = [
 				'''
+				  super(view);
 				  this.view = view;
 				''']
       ]
